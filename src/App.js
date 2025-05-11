@@ -1,5 +1,6 @@
 //** import third party component */
-import Navbar from '../src/component/navigation/navbar'
+import Navbar from './component/navigation'
+import Home from './component/homePage/index'
 //** css and desing */
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -9,6 +10,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
+        <Home />
       </div>
     </BrowserRouter>
   )

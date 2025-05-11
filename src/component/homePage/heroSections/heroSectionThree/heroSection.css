@@ -1,0 +1,24 @@
+.cat-div {
+  /* background-color: red; */
+  height: 250px;
+  padding: 2px;
+}
+.hero-Section {
+  margin-top: 50px;
+  margin-inline: 20px;
+  background-color: rgb(210, 210, 240);
+
+  display: flex;
+  justify-content: space-between;
+  /* padding-inline: 5px; */
+  padding-block: 2px;
+}
+/* Hide scrollbar for all browsers */
+.custom-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

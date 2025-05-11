@@ -1,13 +1,47 @@
+/* Ensure the body has no margin and some padding at the top to account for navbar */
 body {
+  background-color: red;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* This class ensures the navbar stays fixed at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  height: 70px; /* Set navbar height */
+  padding-inline: 10px;
+  z-index: 1000;
+  align-items: center; /* Vertically centers navbar content */
+  width: 100%; /* Make sure it takes up full width */
+}
+
+/* Adjusting input box width and appearance */
+.input-primary {
+  background-color: #f0f8ff;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.navbar-primary-text {
+  font-size: 1.1rem;
+}
+/* Add space for content below the navbar */
+.hero-Sections {
+  margin-top: 50px; /* Increased to ensure content is not hidden under navbar */
+  margin-inline: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5px;
+  padding-block: 2px;
 }
