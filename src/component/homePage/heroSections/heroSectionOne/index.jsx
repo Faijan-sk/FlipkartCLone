@@ -15,7 +15,7 @@ import HomeDecore from './../../../../asessts/images/heroSection/Home Decore.png
 
 function index() {
   return (
-    <div className="hero-Section">
+    <div className="parent-div">
       <div>
         <img src={TopOffers} alt="Top Offers" />
         <h6>Top Offers</h6>

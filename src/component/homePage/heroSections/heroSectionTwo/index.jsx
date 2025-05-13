@@ -82,6 +82,7 @@ const HeroCarousel = () => {
         >
           {extendedImages.map((img, index) => (
             <img
+              loading="lazy"
               src={img}
               key={index}
               alt={`slide ${index}`}

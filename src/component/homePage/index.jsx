@@ -4,6 +4,8 @@ import React from 'react'
 import HeroSectionOne from './heroSections/heroSectionOne/index'
 import HeroSectionTwo from './heroSections/heroSectionTwo/index'
 import HeroSectionThree from './heroSections/heroSectionThree/index'
+import HeroSectionFour from './heroSections/heroSectionFour/index'
+import HeroSectionFive from './heroSections/hersectionFive/index'
 function index() {
   return (
     <>
@@ -15,6 +17,12 @@ function index() {
 
       {/* specific offer */}
       <HeroSectionThree />
+
+      {/* offer cards*/}
+      <HeroSectionFour />
+
+      {/* random picks */}
+      <HeroSectionFive />
     </>
   )
 }

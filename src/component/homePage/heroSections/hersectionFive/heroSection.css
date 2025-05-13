@@ -1,0 +1,16 @@
+.hero-section {
+  margin-top: 5px;
+  margin-inline: 20px;
+  justify-content: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.child-div {
+  background-color: white;
+}
+.product-img {
+  max-height: 200px; /* Fixed height */
+  width: 100%; /* Ensure full width */
+  object-fit: cover; /* Ensures the image fits within the box */
+}
