@@ -6,6 +6,7 @@ import HeroSectionTwo from './heroSections/heroSectionTwo/index'
 import HeroSectionThree from './heroSections/heroSectionThree/index'
 import HeroSectionFour from './heroSections/heroSectionFour/index'
 import HeroSectionFive from './heroSections/hersectionFive/index'
+import Footer from './../footer/index'
 function index() {
   return (
     <>
@@ -23,6 +24,9 @@ function index() {
 
       {/* random picks */}
       <HeroSectionFive />
+
+      {/* Footer  */}
+      <Footer />
     </>
   )
 }

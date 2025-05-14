@@ -236,7 +236,7 @@ function HeroSectionThree() {
               {phones.map((item) => (
                 <div
                   key={item.id}
-                  className="text-center"
+                  className="text-center me-4"
                   style={{ width: '150px', flex: '0 0 auto' }}
                 >
                   <img
