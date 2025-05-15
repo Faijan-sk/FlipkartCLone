@@ -1,0 +1,54 @@
+/* Hover effect for login button */
+.login-btn-hover {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn-hover .icon-color {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.login-btn-hover:hover {
+  background-color: #2874f0;
+}
+
+.login-btn-hover:hover .icon-color {
+  color: white;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  height: 70px;
+  padding-inline: 10px;
+  z-index: 1000;
+  align-items: center;
+  width: 100%;
+}
+
+.input-primary {
+  background-color: #f0f8ff;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.navbar-primary-text {
+  font-size: 1.1rem;
+}
+
+.hero-Sections {
+  margin-top: 50px;
+  margin-inline: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5px;
+  padding-block: 2px;
+}

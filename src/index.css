@@ -9,32 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* This class ensures the navbar stays fixed at the top */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  display: flex;
-  height: 70px; /* Set navbar height */
-  padding-inline: 10px;
-  z-index: 1000;
-  align-items: center; /* Vertically centers navbar content */
-  width: 100%; /* Make sure it takes up full width */
-}
-
-/* Adjusting input box width and appearance */
-.input-primary {
-  background-color: #f0f8ff;
-  max-width: 600px;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.navbar-primary-text {
-  font-size: 1.1rem;
-}
 /* Add space for content below the navbar */
 .hero-Sections {
   margin-top: 50px; /* Increased to ensure content is not hidden under navbar */

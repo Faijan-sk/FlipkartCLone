@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../index.css'
+import './../navigation/navbar.css'
 
 import { Link } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <div className="navbar shadow-md">
       <div className="navbarLogo">
-        <img src={MainLogo} alt="comony_logo" />
+        <img src={MainLogo} alt="company_logo" />
       </div>
       <div className="input-primary d-flex align-items-center px-2">
         <CiSearch size={20} className="text-secondary d-flex" />
@@ -28,17 +28,20 @@ function Navbar() {
           placeholder="Search for Products, Brands and More"
         />
       </div>
-      <div className="d-flex align-items-center">
-        <CgProfile size={20} className="text-dark d-flex mx-2" />
+
+      {/* Login Button with Hover Effect */}
+      <div className="d-flex align-items-center px-2 py-2 rounded login-btn-hover">
+        <CgProfile size={20} className="d-flex mx-2 icon-color" />
         <Link
           to="/login"
-          className="navbar-primary-text text-decoration-none text-dark"
+          className="navbar-primary-text text-decoration-none icon-color"
         >
           Login
         </Link>
-        <IoIosArrowUp size={16} className="text-dark d-flex mx-2" />
+        <IoIosArrowUp size={16} className="d-flex mx-2 icon-color" />
       </div>
-      <div className="d-flex align-items-center">
+
+      <div className="d-flex align-items-center cursor-pointer">
         <HiOutlineShoppingCart size={20} className="text-dark d-flex mx-2" />
         <Link
           to="/cart"
@@ -47,7 +50,7 @@ function Navbar() {
           Cart
         </Link>
       </div>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center cursor-pointer">
         <PiStorefront size={20} className="text-dark d-flex mx-2" />
         <Link
           to="/becomeSeller"
@@ -56,7 +59,7 @@ function Navbar() {
           Become Seller
         </Link>
       </div>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center cursor-pointer">
         <SlOptionsVertical size={20} className="text-dark d-flex mx-2" />
       </div>
     </div>
