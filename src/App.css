@@ -118,13 +118,27 @@
 
 /* login page css */
 .login-block {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
   justify-content: center;
   width: 55%;
-  height: 80%;
+  height: 60%;
+}
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .left-child {
   height: 550px;
-  background-color: #1973cd;
+  background-color: #2874f0;
   color: white;
+}
+.submit-btn {
+  width: 90%;
+  height: 50px;
+  font-weight: 600;
+  color: white;
+  background-color: #fb641b;
+  border: none;
 }
