@@ -17,6 +17,7 @@ import './App.css'
 import Layout from './component/layout.jsx'
 import Home from './component/Home/Home.jsx'
 import Login from './component/login/Login.jsx'
+import UserContextProvider from './constext/UserContextProvider.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -44,7 +45,9 @@ const router = createBrowserRouter(
   )
 )
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+  <UserContextProvider>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </UserContextProvider>
 )

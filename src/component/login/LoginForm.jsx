@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useForm } from 'react-hook-form'
+import UserContext from '../../constext/UserContext'
 
 function LoginForm() {
   const [otpSendCount, setOtpSendCount] = useState(0)
   const [btnValue, setBtnValue] = useState('Request OTP')
+  const [username, setUserName] = useState('')
+  const { setUserData } = useContext(UserContext)
 
   const {
     register,
@@ -13,6 +16,9 @@ function LoginForm() {
 
   async function onsubmit(data) {
     await new Promise((resolve) => setTimeout(resolve, 3000))
+    setUserName(data.username)
+
+    setUserData({ username })
 
     setOtpSendCount((prevCopount) => prevCopount + 1)
 

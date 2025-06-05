@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import UserContext from '../../constext/UserContext'
 
 import { Link } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ import MainLogo from '../../assets/images/logo/MainLogo.svg' // check path spell
 
 function Navbar() {
   const [openDropDown, setOpenDropDown] = useState(false)
+  const { userData } = useContext(UserContext)
 
   const dropDown = [
     {
@@ -63,7 +65,13 @@ function Navbar() {
   return (
     <div className="navbar shadow-md">
       <div className="navbarLogo">
-        <img src={MainLogo} alt="company_logo" />
+        <Link to="/">
+          <img
+            style={{ cursor: 'pointer' }}
+            src={MainLogo}
+            alt="company_logo"
+          />
+        </Link>
       </div>
       <div className="input-primary d-flex align-items-center px-2">
         <CiSearch size={20} className="text-secondary d-flex" />
@@ -95,15 +103,19 @@ function Navbar() {
       </div>
       {openDropDown && (
         <div className="Nav-drop-down px-3 py-3 text-start">
-          <div
-            className="d-flex mb-0"
-            style={{ justifyContent: 'space-between' }}
-          >
-            <p className="text-start">New Customer ?</p>
-            <Link to="/signup" className="text-decoration-none ms-2 fw-bold">
-              Sign Up
-            </Link>
-          </div>
+          {userData ? (
+            <h5>{userData?.username}</h5>
+          ) : (
+            <div
+              className="d-flex mb-3"
+              style={{ justifyContent: 'space-between' }}
+            >
+              <p className="text-start mb-0">New Customer?</p>
+              <Link to="/signup" className="text-decoration-none ms-2 fw-bold">
+                Sign Up
+              </Link>
+            </div>
+          )}
           <hr className="mt-0" />
 
           <ul className="mt-0">
